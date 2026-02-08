@@ -22,10 +22,10 @@
 		<div id="slide1" class="relative carousel-item w-full">
 			<figure class="diff h-full min-h-auto w-[80vw] lg:w-100" tabindex="-1">
 				<div class="diff-item-1" role="img" tabindex="-1">
-					<img alt="daisy" src="https://picsum.photos/1024/768?blur=2" />
+					<img alt="daisy" src="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/escape-1-viejo.webp" />
 				</div>
 				<div class="diff-item-2" role="img">
-					<img alt="daisy" src="https://picsum.photos/1024/768?blur=1" />
+					<img alt="daisy" src="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/escape-1-nuevo.webp" />
 				</div>
 				<div class="diff-resizer"></div>
 			</figure>
@@ -33,10 +33,10 @@
 		<div id="slide2" class="relative carousel-item h-full w-full">
 			<figure class="diff h-full min-h-auto" tabindex="-1">
 				<div class="diff-item-1" role="img" tabindex="-1">
-					<img alt="daisy" src="https://picsum.photos/1024/768?blur=2" />
+					<img alt="daisy" src="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/escape-2-viejo.webp" />
 				</div>
 				<div class="diff-item-2" role="img">
-					<img alt="daisy" src="https://picsum.photos/1024/768?blur=1" />
+					<img alt="daisy" src="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/escape-2-nuevo.webp" />
 				</div>
 				<div class="diff-resizer bg-white"></div>
 			</figure>

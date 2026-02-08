@@ -6,6 +6,7 @@
 
 <div class="relative flex w-screen flex-col">
 	<Hero
+		image="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/Hero-Racing-1.webp"
 		title={{
 			sentence: m.landing_title(),
 			words: [m.race_cars(), m.industries(), m.buildings()]
@@ -31,23 +32,23 @@
 				</li>
 				<li class="collapse-arrow collapse border border-white">
 					<input type="radio" name="my-accordion-2" />
-					<h3 class="collapse-title text-2xl  font-semibold lg:text-4xl">
+					<h3 class="collapse-title text-2xl font-semibold lg:text-4xl">
 						Custom solutions for various industries
 					</h3>
 					<div class="collapse-content">
-						Our expertise spans multiple sectors, including automotive, construction, and
-						industrial applications, allowing us to cater to diverse client needs.
+						Our expertise spans multiple sectors, including automotive, construction, and industrial
+						applications, allowing us to cater to diverse client needs.
 					</div>
 				</li>
 				<li class="collapse-arrow collapse border border-white">
 					<input type="radio" name="my-accordion-2" />
-					<h3 class="collapse-title text-2xl  font-semibold lg:text-4xl">
+					<h3 class="collapse-title text-2xl font-semibold lg:text-4xl">
 						Exceptional customer service and support
 					</h3>
 					<div class="collapse-content">
-						We pride ourselves on providing outstanding customer service, ensuring that our
-						clients receive the support they need throughout the entire process, from
-						consultation to delivery.
+						We pride ourselves on providing outstanding customer service, ensuring that our clients
+						receive the support they need throughout the entire process, from consultation to
+						delivery.
 					</div>
 				</li>
 			</ul>

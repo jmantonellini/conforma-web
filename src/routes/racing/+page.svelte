@@ -28,7 +28,7 @@
 </script>
 
 <Hero
-	videoWebM={'https://storage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4'}
+	videoWebM={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/Yamaha-mobile.webm'}
 	title={{ sentence: m.racing_title() }}
 />
 <ScrollIndicator />
@@ -59,7 +59,7 @@
 
 <section
 	id="comparison"
-	style="background-image: url('https://picsum.photos/1024/768?blur=2'); background-size: cover; background-position: left;"
+	style="background-image: url('https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/backgrounds/welding-bg.webp'); background-size: cover; background-position: left;"
 >
 	<div class="relative flex h-screen flex-col items-center gap-10 p-4 backdrop-blur-sm lg:p-16">
 		<Comparisson />

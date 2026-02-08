@@ -12,7 +12,7 @@
 	};
 
 	let {
-		image = "https://picsum.photos/1024/768?blur=2",
+		image = "https://picsum.photos/1920/1080",
 		videoWebM = null,
 		videoMP4 = null,
 		mobileVideoWebM = null,
