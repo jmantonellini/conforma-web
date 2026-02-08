@@ -1,0 +1,20 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"hello_world": "Hello, {name} from en!",
+	"slogan": "Engineering excellence in stainless steel solutions.",
+	"contact_us": "Contact Us",
+	"follow_us": "Follow Us",
+	"competition": "Competition",
+	"industry": "Industry",
+	"racing": "Racing",
+	"architecture": "Architecture",
+	"trusted_around": "Trusted all around the globe",
+	"trusted_around_description": "We have been trusted by customers all around the globe for over 20 years.",
+	"pricing": "Get Pricing",
+	"makes_us_different": "What makes us different?",
+	"racing_title": "№1 exhaust systems in Argentina",
+	"landing_title": "Stainless steel solutions for",
+	"race_cars": "Race Cars",
+	"industries": "Industries",
+	"buildings": "Buildings"
+}

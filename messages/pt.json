@@ -1,0 +1,20 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+	"hello_world": "Olá, {name}!",
+	"slogan": "Excelência em engenharia para soluções em aço inoxidável.",
+	"contact_us": "Fale conosco",
+	"follow_us": "Siga-nos",
+	"competition": "Competição",
+	"industry": "Indústria",
+	"racing": "Corridas",
+	"architecture": "Arquitetura",
+	"trusted_around": "Confiada em todo o mundo",
+	"trusted_around_description": "Clientes em todo o mundo confiam em nós há mais de 20 anos.",
+	"pricing": "Solicitar orçamento",
+	"makes_us_different": "O que nos torna diferentes?",
+	"racing_title": "Sistemas de escapamento №1 na Argentina",
+	"landing_title": "Soluções em aço inoxidável para",
+	"race_cars": "Carros de corrida",
+	"industries": "Indústrias",
+	"buildings": "Edifícios"
+}
