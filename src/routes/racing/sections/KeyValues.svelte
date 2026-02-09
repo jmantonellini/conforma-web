@@ -4,8 +4,10 @@
 	import Speedometer from '$lib/assets/icons/speedometer.png';
 </script>
 
-<div class="flex flex-col items-center justify-center gap-12 p-4 py-36 text-center lg:flex-row">
-	<div class="flex h-full flex-col items-center gap-6 rounded border-3 border-gray-800 p-10 lg:w-1/4">
+<div class="flex flex-col items-stretch justify-center gap-12 p-4 text-center lg:flex-row lg:py-24">
+	<div
+		class="flex flex-col items-center gap-6 rounded border-3 border-gray-800 p-10 shadow-2xl lg:w-1/4"
+	>
 		<img src={Badge} alt="Anvil" class="h-24 w-24 text-gray-800" />
 		<h2 class="text-2xl font-bold text-gray-800">Top Steel</h2>
 		<p class="max-w-md text-gray-600">
@@ -16,7 +18,9 @@
 			reliability.
 		</p>
 	</div>
-	<div class="flex h-full flex-col items-center gap-6 rounded border-3 border-gray-800 p-10 lg:w-1/4">
+	<div
+		class="flex flex-col items-center gap-6 rounded border-3 border-gray-800 p-10 shadow-2xl lg:w-1/4"
+	>
 		<img src={Anvil} alt="Badge" class="h-24 w-24 text-gray-800" />
 		<h2 class="text-2xl font-bold text-gray-800">Top Craftsmanship</h2>
 		<p class="max-w-md text-gray-600">
@@ -27,7 +31,9 @@
 			We take pride in our attention to detail and commitment to excellence.
 		</p>
 	</div>
-	<div class="flex h-full flex-col items-center gap-6 rounded border-3 border-gray-800 p-10 lg:w-1/4">
+	<div
+		class="flex flex-col items-center gap-6 rounded border-3 border-gray-800 p-10 shadow-2xl lg:w-1/4"
+	>
 		<img src={Speedometer} alt="Speedometer" class="h-24 w-24 text-gray-800" />
 		<h2 class="text-2xl font-bold text-gray-800">Top Performance</h2>
 		<p class="max-w-md text-gray-600">

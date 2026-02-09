@@ -29,6 +29,9 @@
 
 <Hero
 	videoWebM={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/Yamaha-mobile.webm'}
+	mobileVideoWebM={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.webm'}
+	mobilePoster={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/tc-proceso-poster.webp'}
+	poster={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/yamaha-poster.webp'}
 	title={{ sentence: m.racing_title() }}
 />
 <ScrollIndicator />
@@ -39,7 +42,7 @@
 
 <section
 	id="categories"
-	class="flex flex-col items-center gap-10 bg-linear-to-b from-blue-200 to-indigo-100 p-10 text-black lg:p-36"
+	class="flex flex-col items-center gap-10 bg-linear-to-b from-white to-indigo-100 p-10 text-black lg:p-24"
 >
 	{#if visible}
 		<CategoriesOfficial />
@@ -48,7 +51,7 @@
 
 <section
 	id="other-categories"
-	class="flex flex-col items-center gap-y-6 bg-linear-to-b from-indigo-100 to-white py-10 text-black lg:pb-36"
+	class="flex flex-col items-center gap-y-6 bg-linear-to-b from-indigo-100 to-gray-900 py-10 text-black lg:pb-36"
 >
 	<CategoriesOther />
 </section>
@@ -57,10 +60,7 @@
 	<Crafts />
 </section>
 
-<section
-	id="comparison"
-	style="background-image: url('https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/backgrounds/welding-bg.webp'); background-size: cover; background-position: left;"
->
+<section id="comparison">
 	<div class="relative flex h-screen flex-col items-center gap-10 p-4 backdrop-blur-sm lg:p-16">
 		<Comparisson />
 	</div>

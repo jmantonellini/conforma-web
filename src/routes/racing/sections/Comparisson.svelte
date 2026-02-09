@@ -17,7 +17,7 @@
 	Check the <i>Conforma Effect</i> with this side to side comparisson
 </p>
 <div class="relative flex h-3/5 w-full items-center justify-center lg:h-full lg:gap-4">
-	<a href="#slide2" onclick={(e) => handleSlideChange(e)} class="btn btn-circle btn-secondary">❮</a>
+	<a href="#slide2" onclick={(e) => handleSlideChange(e)} class="btn btn-circle btn-accent">❮</a>
 	<div class="carousel h-full carousel-center rounded-2xl border-2 border-gray-300 bg-white">
 		<div id="slide1" class="relative carousel-item w-full">
 			<figure class="diff h-full min-h-auto w-[80vw] lg:w-100" tabindex="-1">
@@ -42,5 +42,5 @@
 			</figure>
 		</div>
 	</div>
-	<a href="#slide1" onclick={(e) => handleSlideChange(e)} class="btn btn-circle btn-secondary">❯</a>
+	<a href="#slide1" onclick={(e) => handleSlideChange(e)} class="btn btn-circle btn-accent">❯</a>
 </div>

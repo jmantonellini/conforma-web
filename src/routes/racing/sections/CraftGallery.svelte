@@ -77,11 +77,11 @@
 							tabindex={index === activeIndex ? 0 : -1}
 							onclick={() => selectImage(index)}
 							onkeydown={(e) => onKeyNavigate(e, index)}
-							class="relative aspect-square h-20 shrink-0 cursor-pointer overflow-hidden rounded-xl border
+							class="relative aspect-square h-20 shrink-0 cursor-pointer overflow-hidden rounded-xl border-2
              transition focus-visible:ring-2 focus-visible:ring-black
              focus-visible:outline-none
              {index === activeIndex
-								? 'border-black'
+								? 'border-white'
 								: 'border-transparent opacity-70 hover:opacity-100'}"
 						>
 							<img src={image.src} alt={image.alt ?? title} class="h-full w-full object-cover" />
