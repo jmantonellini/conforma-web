@@ -2,11 +2,12 @@
 	import { m } from '$lib/paraglide/messages';
 	import Hero from '$lib/ui/Hero.svelte';
 	import ScrollIndicator from '$lib/ui/ScrollIndicator.svelte';
+	import WorldBackground from '$lib/assets/bg-world.png';
 </script>
 
 <div class="relative flex w-screen flex-col">
 	<Hero
-		image="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/Hero-Racing-1.webp"
+		poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/Hero-Racing-1.webp"
 		title={{
 			sentence: m.landing_title(),
 			words: [m.race_cars(), m.industries(), m.buildings()]
@@ -15,7 +16,7 @@
 	<ScrollIndicator />
 
 	<section
-		class="sticky top-0 flex h-screen flex-col items-center justify-center bg-linear-to-b from-red-900 to-red-300 text-white"
+		class="flex h-screen flex-col items-center justify-center bg-linear-to-b from-red-900 to-red-300 text-white"
 	>
 		<div class="flex w-full flex-col items-center justify-center gap-4 lg:w-2/3 lg:gap-10">
 			<h2 class="text-4xl font-bold lg:text-6xl">{m.makes_us_different()}</h2>
@@ -55,26 +56,27 @@
 		</div>
 	</section>
 	<section
-		class="sticky top-0 flex h-screen flex-col items-center justify-center bg-linear-to-b from-[#141A27] to-gray-700"
+		class="flex flex-col h-screen lg:h-[70vh] items-center justify-center bg-cover bg-center text-white"
+		style="background-image: url({WorldBackground});"
 	>
 		<h2 class="text-4xl font-bold lg:text-6xl">{m.trusted_around()}</h2>
 		<p class="mt-2">{m.trusted_around_description()}</p>
-		<ul class="">
-			<li class="mt-4">🇺🇸 USA</li>
-			<li class="mt-2">🇨🇦 CANADA</li>
-			<li class="mt-2">🇧🇷 BRASIL</li>
-			<li class="mt-2">🇲🇽 MÉXICO</li>
-			<li class="mt-2">🇭🇰 HONG KONG</li>
-			<li class="mt-2">🇮🇹 ITALIA</li>
-			<li class="mt-2">🇪🇸 ESPAÑA</li>
-			<li class="mt-2">🇩🇪 ALEMANIA</li>
-			<li class="mt-2">🇬🇧 INGLATERRA</li>
-			<li class="mt-2">🇨🇱 CHILE</li>
-			<li class="mt-2">🇦🇺 AUSTRALIA</li>
+		<ul class="flex gap-4">
+			<li>🇺🇸 USA</li>
+			<li>🇨🇦 CANADA</li>
+			<li>🇧🇷 BRASIL</li>
+			<li>🇲🇽 MÉXICO</li>
+			<li>🇭🇰 HONG KONG</li>
+			<li>🇮🇹 ITALIA</li>
+			<li>🇪🇸 ESPAÑA</li>
+			<li>🇩🇪 ALEMANIA</li>
+			<li>🇬🇧 INGLATERRA</li>
+			<li>🇨🇱 CHILE</li>
+			<li>🇦🇺 AUSTRALIA</li>
 		</ul>
 	</section>
 	<section
-		class="sticky top-0 flex h-[125vh] flex-col items-center justify-center bg-linear-to-b from-[#141A27] to-gray-700 text-white"
+		class="flex h-[125vh] flex-col items-center justify-center bg-linear-to-b from-[#141A27] to-gray-700 text-white"
 	>
 		<h2 class="text-4xl font-bold lg:text-6xl">25 years of craftsmanship</h2>
 		<h3 class="mt-4 text-2xl font-bold lg:text-4xl">From Argentina to the World</h3>

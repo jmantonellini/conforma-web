@@ -25,13 +25,13 @@
 
 <!-- svelte-ignore a11y_no_static_element_interactions -->
 <div
-	class="relative flex min-h-screen w-screen! items-end overflow-hidden"
+	class="relative flex min-h-screen w-screen! items-center overflow-hidden"
 	aria-label="Hero Section"
 >
-	<div class="absolute inset-0 z-1 bg-linear-to-tr from-black to-transparent"></div>
+	<div class="absolute inset-0 z-1 bg-linear-to-t from-transparent via-black via-40% to-transparent to-90%"></div>
 	<div
 		in:fly={{ y: 100, duration: 800, delay: 200 }}
-		class="z-2 mb-14 h-auto w-full p-8 text-neutral-content lg:m-0 lg:justify-start lg:p-20"
+		class="z-2 h-auto w-full p-8 text-neutral-content lg:p-20"
 	>
 		<RotatingTitle {title} />
 	</div>

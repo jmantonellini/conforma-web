@@ -8,7 +8,6 @@
 
 	import CategoriesOfficial from './sections/CategoriesOfficial.svelte';
 	import CategoriesOther from './sections/CategoriesOther.svelte';
-	import Comparisson from './sections/Comparisson.svelte';
 	import Crafts from './sections/Crafts.svelte';
 	import KeyValues from './sections/KeyValues.svelte';
 
@@ -36,7 +35,7 @@
 />
 <ScrollIndicator />
 
-<section id="key-values" class="bg-white">
+<section id="key-values" class="flex flex-col items-center gap-10 bg-white py-10 lg:py-24">
 	<KeyValues />
 </section>
 
@@ -58,10 +57,4 @@
 
 <section id="crafts" class="flex min-h-screen w-full flex-col items-center bg-gray-900">
 	<Crafts />
-</section>
-
-<section id="comparison">
-	<div class="relative flex h-screen flex-col items-center gap-10 p-4 backdrop-blur-sm lg:p-16">
-		<Comparisson />
-	</div>
 </section>

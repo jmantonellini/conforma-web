@@ -42,7 +42,7 @@
 			transform: translateX(0%);
 		}
 	}
-	
+
 	@keyframes marquee-inverted {
 		0% {
 			transform: translateX(0%);
@@ -81,8 +81,10 @@
 	}
 }
 
+html,
 body {
 	font-family: var(--font-rubik);
+	height: 100%;
 }
 
 h1,

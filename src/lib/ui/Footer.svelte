@@ -38,14 +38,14 @@
 		<div class="mb-8 grid grid-cols-1 gap-8 md:grid-cols-3">
 			<!-- Company Info -->
 			<div>
-				<h3 class="mb-2 text-lg font-bold text-white">Conforma Inox SRL</h3>
-				<p class="text-sm text-gray-400">{m.slogan()}</p>
+				<h3 class="mb-2 text-xl font-bold text-white">Conforma Inox SRL</h3>
+				<p class="text-gray-400">{m.slogan()}</p>
 			</div>
 
 			<!-- Contact Information -->
 			<div>
-				<h4 class="mb-4 font-semibold text-white">{m.contact_us()}</h4>
-				<ul class="space-y-2 text-sm">
+				<h4 class="mb-4 text-xl font-semibold text-white">{m.contact_us()}</h4>
+				<ul class="space-y-2">
 					<li>
 						<a href="https://maps.app.goo.gl/6Qnh8m4rAkiJbDhC6" target="_blank"
 							>📍 Ismael Iraola 1270, S2600 Venado Tuerto, Santa Fe, Argentina</a
@@ -59,7 +59,7 @@
 
 			<!-- Social Media -->
 			<div>
-				<h4 class="mb-4 font-semibold text-white">{m.follow_us()}</h4>
+				<h4 class="mb-4 text-xl font-semibold text-white">{m.follow_us()}</h4>
 				<div class="flex gap-4">
 					<a href="https://www.instagram.com/conforma.inox/" target="_blank"
 						><Instagram class="transition hover:text-[#ED3239]" /></a
