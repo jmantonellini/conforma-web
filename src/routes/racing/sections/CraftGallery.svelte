@@ -84,7 +84,7 @@
 								? 'border-white'
 								: 'border-transparent opacity-70 hover:opacity-100'}"
 						>
-							<img src={image.src} alt={image.alt ?? title} class="h-full w-full object-cover" />
+							<img loading="lazy" src={image.src} alt={image.alt ?? title} class="h-full w-full object-cover" />
 						</button>
 					{/each}
 				</div>
