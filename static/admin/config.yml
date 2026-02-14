@@ -2,7 +2,7 @@ backend:
   name: github
   repo: jmantonellini/conforma-web
   branch: main
-  base_url: https://decap-proxy-jma.workers.dev
+  base_url: https://decap-proxy-jma.juanmantonellini.workers.dev
   auth_endpoint: /auth
 
 media_folder: "static/uploads"
