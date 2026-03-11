@@ -58,6 +58,13 @@
 				>
 					{m.architecture()}
 				</a>
+				<a
+					href={localizeHref('/news')}
+					class="px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
+					in:fly={{ x: 50, duration: 1000, delay: 300 + 2 * 50, easing: quintOut }}
+				>
+					{m.news()}
+				</a>
 			</div>
 
 			<!-- Right side buttons -->

@@ -6,8 +6,8 @@ import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 const config = {
 	// Consult https://svelte.dev/docs/kit/integrations
 	// for more information about preprocessors
+	extensions: ['.svelte', '.svx', '.md'],
 	preprocess: [vitePreprocess(), mdsvex()],
-
 	kit: {
 		adapter: adapter({
 			pages: 'build',
@@ -16,9 +16,7 @@ const config = {
 			precompress: false,
 			strict: true
 		})
-	},
-
-	extensions: ['.svelte', '.svx']
+	}
 };
 
 export default config;

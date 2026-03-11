@@ -27,10 +27,10 @@
 </script>
 
 <Hero
-	videoWebM={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/Yamaha-mobile.webm'}
-	mobileVideoWebM={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.webm'}
-	mobilePoster={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/tc-proceso-poster.webp'}
-	poster={'https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/yamaha-poster.webp'}
+	videoWebM="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/Yamaha-mobile.webm"
+	mobileVideoWebM="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.webm"
+	mobilePoster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/tc-proceso-poster.webp"
+	poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/yamaha-poster.webp"
 	title={{ sentence: m.racing_title() }}
 />
 <ScrollIndicator />

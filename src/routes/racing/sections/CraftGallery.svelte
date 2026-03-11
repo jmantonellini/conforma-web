@@ -1,6 +1,7 @@
 <script lang="ts">
 	type GalleryImage = {
 		src: string;
+		thumb?: string;
 		alt?: string;
 	};
 
@@ -46,19 +47,19 @@
 				onmouseenter={() => (isZoomed = true)}
 				onmouseleave={() => (isZoomed = false)}
 			>
-					<img
-						src={activeImage.src}
-						alt={activeImage.alt ?? title}
-						class="h-full w-full object-cover transition-transform duration-300
+				<img
+					src={activeImage.src}
+					alt={activeImage.alt ?? title}
+					class="h-full w-full object-cover transition-transform duration-300
              {isZoomed ? 'scale-110' : 'scale-100'}
              hidden sm:block"
-					/>
+				/>
 				<!-- Mobile (no zoom) -->
-					<img
-						src={activeImage.src}
-						alt={activeImage.alt ?? title}
-						class="h-full w-full object-cover sm:hidden"
-					/>
+				<img
+					src={activeImage.src}
+					alt={activeImage.alt ?? title}
+					class="h-full w-full object-cover sm:hidden"
+				/>
 
 				<!-- THUMBNAILS -->
 			</div>
@@ -68,7 +69,7 @@
 					role="tablist"
 					aria-label="Image gallery thumbnails"
 				>
-					{#each images.slice(0, images.length) as image, index}
+					{#each images.slice(0, images.length) as image, index (index)}
 						<button
 							type="button"
 							role="tab"
@@ -84,7 +85,12 @@
 								? 'border-white'
 								: 'border-transparent opacity-70 hover:opacity-100'}"
 						>
-							<img loading="lazy" src={image.src} alt={image.alt ?? title} class="h-full w-full object-cover" />
+							<img
+								loading="lazy"
+								src={image.thumb ?? image.src}
+								alt={image.alt ?? title}
+								class="h-full w-full object-cover"
+							/>
 						</button>
 					{/each}
 				</div>
@@ -103,7 +109,7 @@
 				</p>
 			{/if}
 
-			{#each description.slice(0, 2) as paragraph}
+			{#each description.slice(0, 2) as paragraph, index (index)}
 				<p class="leading-relaxed text-neutral-300">
 					{paragraph}
 				</p>

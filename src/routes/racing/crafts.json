@@ -8,15 +8,42 @@
 				"This exhaust was created for those who want to take performance and sound to the next level, maintaining the original aesthetics while unleashing the full character of the V8. Made from high-quality stainless steel, it features a 3-inch diameter and a total length of 78.74 inches, optimizing gas flow and delivering a deeper, sportier tone without the need for structural modifications."
 			],
 			"images": [
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-1.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-2.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-3.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-4.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-5.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-6.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-7.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-8.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-9.webp" }
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-1.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-1-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-2.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-2-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-3.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-3-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-4.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-4-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-5.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-5-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-6.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-6-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-7.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-7-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-8.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-8-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-9.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/collino/collino-9-thumb.webp"
+				}
 			]
 		},
 		{
@@ -27,10 +54,22 @@
 				"Its distinctive styling, characterized by sharp lines and a muscular stance, sets it apart from the crowd. Whether you're cruising down the highway or carving through twisty roads, the Kawasaki Z 550 offers a perfect blend of performance and style that continues to captivate riders around the world."
 			],
 			"images": [
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-1.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-2.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-3.webp" },
-				{ "src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-4.webp" }
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-1.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-1-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-2.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-2-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-3.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-3-thumb.webp"
+				},
+				{
+					"src": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-4.webp",
+					"thumb": "https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/crafts/kawasaki/kawa-4-thumb.webp"
+				}
 			]
 		}
 	]
