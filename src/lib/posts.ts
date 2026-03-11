@@ -1,32 +1,30 @@
-import { error } from '@sveltejs/kit';
 import matter from 'gray-matter';
 
-export const prerender = true;
+export type Post = {
+    title: string;
+    date: string;
+    image?: string;
+    excerpt?: string;
+    slug: string;
+    body?: string;
+};
 
-const modules = import.meta.glob('/src/content/blog/*.md', {
-	eager: true,
-	query: '?raw',
-	import: 'default'
-});
+export const loadPosts = async (): Promise<Post[]> => {
+    const modules = import.meta.glob('/src/content/blog/*.md', { query: '?raw', import: 'default' });
 
-export function entries() {
-	return Object.keys(modules).map((path) => {
-		const slug = path.split('/').pop()?.replace('.md', '');
-		return { slug };
-	});
-}
+    const posts = await Promise.all(
+        Object.entries(modules).map(async ([path, loader]) => {
+            const content = await loader();
+            const { data, content: body } = matter(content);
+            return {
+                slug: path.split('/').pop()?.replace('.md', ''),
+                ...data,
+                body
+            } as Post;
+        })
+    );
 
-export async function load({ params }) {
-	const match = Object.entries(modules).find(([path]) => path.endsWith(`${params.slug}.md`));
+    posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
-	if (!match) {
-		throw error(404, 'Post not found');
-	}
-
-	const { data, content } = matter(match[1] as string);
-
-	return {
-		meta: data,
-		content
-	};
-}
+    return posts;
+};

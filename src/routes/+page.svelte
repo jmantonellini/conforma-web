@@ -107,7 +107,7 @@
 					<p class="text-gray-600">{new Date(post.date).toLocaleDateString()}</p>
 					<p class="mt-2 text-gray-800">{post?.body?.slice(0, 150)}...</p>
 					<a
-						href={localizeHref(`/blog/${post.slug}`)}
+						href={localizeHref(`/news/${post.slug}`)}
 						class="mt-4 inline-block text-blue-600 hover:underline">Read more</a
 					>
 				</div>
