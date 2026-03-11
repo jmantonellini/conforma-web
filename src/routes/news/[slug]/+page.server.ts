@@ -2,7 +2,7 @@ import matter from 'gray-matter';
 
 export const prerender = true;
 
-const modules = import.meta.glob('/content/blog/*.md', {
+const modules = import.meta.glob('/src/content/blog/*.md', {
     eager: true,
     query: '?raw',
     import: 'default'

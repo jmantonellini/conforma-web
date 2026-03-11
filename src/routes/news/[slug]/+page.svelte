@@ -31,7 +31,7 @@
 
 			{#if data.meta.tags}
 				<div class="mt-6 flex flex-wrap gap-2">
-					{#each data.meta.tags as tag}
+					{#each data.meta.tags as tag (tag)}
 						<span
 							class="rounded-full border border-blue-500/30 bg-blue-500/20 px-3 py-1 text-sm text-blue-300"
 						>
