@@ -3,7 +3,6 @@
 	import Hero from '$lib/ui/Hero.svelte';
 	import ScrollIndicator from '$lib/ui/ScrollIndicator.svelte';
 	import WorldBackground from '$lib/assets/bg-world.png';
-	import matter from 'gray-matter';
 	import { localizeHref } from '$lib/paraglide/runtime';
 
 	let countries = [
@@ -94,9 +93,9 @@
 		<h2 class="text-4xl font-bold">Mission and Values</h2>
 	</section>
 	<div
-		class="sticky top-0 flex h-screen flex-col items-center justify-center bg-linear-to-b from-gray-700 via-gray-200 to-white text-black"
+		class="sticky top-0 gap-4 flex h-screen flex-col items-center justify-center bg-linear-to-b from-gray-700 via-gray-200 to-white text-black"
 	>
-		<h2 class="text-4xl font-bold">Latest news and updates</h2>
+		<h2 class="text-4xl font-bold">{m.latest_news()}</h2>
 		<div class="flex flex-wrap justify-center gap-6">
 			{#each latestPosts as post (post.slug)}
 				<div class="max-w-md rounded-lg bg-white p-6 shadow-lg">
@@ -108,7 +107,7 @@
 					<p class="mt-2 text-gray-800">{post?.body?.slice(0, 150)}...</p>
 					<a
 						href={localizeHref(`/news/${post.slug}`)}
-						class="mt-4 inline-block text-blue-600 hover:underline">Read more</a
+						class="mt-4 inline-block text-blue-600 hover:underline">{m.read_more()}</a
 					>
 				</div>
 			{/each}
