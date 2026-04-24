@@ -25,8 +25,8 @@
 
 <div class="relative flex w-screen flex-col">
 	<Hero
-		poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/Hero-Racing-1.webp"
-		videoWebM="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.webm"
+		poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/tc-proceso-poster.webp"
+		videoWebM="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.mp4"
 		onVideoLoaded={handleVideoLoaded}
 	/>
 	<ScrollIndicator />
