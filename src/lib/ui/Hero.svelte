@@ -5,9 +5,7 @@
 	type Props = {
 		poster?: string;
 		mobilePoster?: string | null;
-		videoWebM?: string | null;
 		videoMP4?: string | null;
-		mobileVideoWebM?: string | null;
 		mobileVideoMP4?: string | null;
 		onVideoLoaded?: () => void;
 	};
@@ -15,9 +13,7 @@
 	let {
 		poster,
 		mobilePoster = null,
-		videoWebM = null,
 		videoMP4 = null,
-		mobileVideoWebM = null,
 		mobileVideoMP4 = null,
 		onVideoLoaded = () => {}
 	}: Props = $props();
@@ -91,7 +87,7 @@
 			</h1>
 		{/if}
 	</div>
-	{#if videoWebM || videoMP4}
+	{#if videoMP4}
 		<!-- Desktop -->
 		<video
 			bind:this={desktopVideo}
@@ -106,7 +102,6 @@
 			oncanplay={handleVideoLoad}
 			onloadeddata={handleVideoLoad}
 		>
-			<source src={videoWebM} type="video/webm" />
 			<source src={videoMP4} type="video/mp4" />
 		</video>
 
@@ -124,7 +119,6 @@
 			oncanplay={handleVideoLoad}
 			onloadeddata={handleVideoLoad}
 		>
-			<source src={mobileVideoWebM ?? videoWebM} type="video/webm" />
 			<source src={mobileVideoMP4 ?? videoMP4} type="video/mp4" />
 		</video>
 	{/if}
