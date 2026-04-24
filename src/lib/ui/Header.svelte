@@ -80,6 +80,13 @@
 				<button
 					class="cursor-pointer border-2 border-white px-4 py-2 text-sm font-medium text-white uppercase transition hover:border-red-600 hover:text-red-600"
 					in:fly={{ x: 100, duration: 400, delay: 1000, easing: quintOut }}
+					onclick={() => {
+						mobileMenuOpen = false;
+						window.open(
+							'https://wa.me/5493462308598?text=Hola!%20Tengo%20una%20consulta',
+							'_blank'
+						);
+					}}
 				>
 					{m.pricing()}
 				</button>
@@ -151,6 +158,13 @@
 					<div class="flex items-center justify-between border-t border-gray-700 pt-4">
 						<LanguageSelector />
 						<button
+							onclick={() => {
+								mobileMenuOpen = false;
+								window.open(
+									'https://wa.me/5493462308598?text=Hola!%20Tengo%20una%20consulta',
+									'_blank'
+								);
+							}}
 							class="w-full border-2 border-white px-4 py-2 text-sm font-medium text-white uppercase transition hover:border-red-600 hover:text-red-600"
 						>
 							Get Pricing

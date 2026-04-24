@@ -1,11 +1,11 @@
 <!-- MATERIALS -->
 <section
-	class="relative bg-gray-400 px-8 lg:px-16 py-16 lg:py-28"
+	class="relative bg-gray-200 px-8 lg:px-16 py-16 lg:py-28"
 	id="materials"
 	style="clip-path: polygon(0 0, 100% 2rem, 100% 100%, 0 100%);"
 >
 	<div
-		class="mb-4 flex items-center gap-4 text-[0.72rem] tracking-[0.35em] text-red-800 uppercase before:h-px before:w-[30px] before:bg-red-800 before:content-['']"
+		class="mb-4 flex items-center gap-4 text-[0.72rem] tracking-[0.35em] text-red-800 uppercase before:h-px before:w-7.5 before:bg-red-800 before:content-['']"
 	>
 		Technical Specs
 	</div>

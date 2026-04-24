@@ -3,7 +3,7 @@
 	import Hero from '$lib/ui/Hero.svelte';
 	import ScrollIndicator from '$lib/ui/ScrollIndicator.svelte';
 	import { localizeHref } from '$lib/paraglide/runtime';
-	import { onMount } from 'svelte';
+	import { getContext } from 'svelte';
 	import SteelTechnique from '$lib/ui/sections/Steel&Technique.svelte';
 	import MissionVison from '$lib/ui/sections/MissionVison.svelte';
 	import Process from '$lib/ui/sections/Process.svelte';
@@ -15,23 +15,19 @@
 
 	let latestPosts = $derived(data.latestPosts);
 
-	let isMobile = $state(false);
+	// Get context from layout
+	const heroContext = getContext<{ setLoaded: (value: boolean) => void }>('heroVideoLoaded');
 
-	onMount(() => {
-		const checkMobile = () => {
-			isMobile = window.innerWidth < 768;
-		};
-		checkMobile();
-		window.addEventListener('resize', checkMobile);
-		return () => window.removeEventListener('resize', checkMobile);
-	});
+	function handleVideoLoaded() {
+		heroContext?.setLoaded(true);
+	}
 </script>
 
 <div class="relative flex w-screen flex-col">
 	<Hero
 		poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/Hero-Racing-1.webp"
 		videoWebM="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.webm"
-		title="Forged for Excellence"
+		onVideoLoaded={handleVideoLoaded}
 	/>
 	<ScrollIndicator />
 
@@ -53,7 +49,7 @@
 		<SteelTechnique />
 	</div>
 
-	<div class="-mt-px bg-gray-400">
+	<div class="-mt-px bg-gray-200">
 		<MissionVison />
 	</div>
 

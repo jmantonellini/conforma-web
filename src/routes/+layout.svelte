@@ -3,7 +3,7 @@
 	import 'lenis/dist/lenis.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Preloader from '$lib/Preloader.svelte';
-	import { onMount } from 'svelte';
+	import { onMount, setContext } from 'svelte';
 	import Footer from '$lib/ui/Footer.svelte';
 	import Header from '$lib/ui/Header.svelte';
 	import Lenis from 'lenis';
@@ -14,13 +14,28 @@
 	let { children } = $props();
 	let loaded = $state(false);
 
+	setContext('heroVideoLoaded', {
+		get loaded() {
+			return loaded;
+		},
+		setLoaded: (value: boolean) => {
+			loaded = value;
+		}
+	});
+
 	onMount(() => {
-		loaded = true;
+		const timeout = setTimeout(() => {
+			if (!loaded) {
+				console.log('Video load timeout, showing page anyway');
+				loaded = true;
+			}
+		}, 5000);
+
 		const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 		lenis = new Lenis({
 			smoothWheel: !prefersReducedMotion,
-			syncTouch: false, // keep false for mobile
+			syncTouch: false,
 			duration: 1.1,
 			easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t))
 		});
@@ -34,6 +49,7 @@
 
 		return () => {
 			lenis.destroy();
+			clearTimeout(timeout);
 		};
 	});
 </script>
