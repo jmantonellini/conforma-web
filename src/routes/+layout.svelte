@@ -7,6 +7,7 @@
 	import Footer from '$lib/ui/Footer.svelte';
 	import Header from '$lib/ui/Header.svelte';
 	import Lenis from 'lenis';
+	import WhatsappFAB from '$lib/ui/WhatsappFAB.svelte';
 
 	let lenis: Lenis;
 
@@ -40,7 +41,8 @@
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 
 <Preloader show={!loaded} />
-<div class="min-h-screen w-screen overflow-hidden bg-gray-900">
+<WhatsappFAB />
+<div class="min-h-screen w-screen overflow-hidden bg-black">
 	<Header />
 	{@render children()}
 	<Footer />

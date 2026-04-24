@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { fly } from 'svelte/transition';
 	import { quintOut } from 'svelte/easing';
 	import LanguageSelector from './LanguageSelector.svelte';
@@ -6,9 +6,17 @@
 	import { m } from '$lib/paraglide/messages';
 	import { localizeHref } from '$lib/paraglide/runtime';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
 	let visible = $state(false);
 	let mobileMenuOpen = $state(false);
+
+	function scrollToSection(id: string) {
+		const element = document.getElementById(id);
+		if (element) {
+			element.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
 
 	onMount(() => {
 		setTimeout(() => {
@@ -19,7 +27,7 @@
 
 {#if visible}
 	<header
-		class="fixed z-10 w-full bg-gray-900/80"
+		class="fixed z-10 w-full border-b-2 border-gray-700 bg-gray-900/90 backdrop-blur-sm"
 		in:fly={{ y: -100, duration: 500, easing: quintOut }}
 	>
 		<div class="flex items-center justify-between px-6 py-4 lg:px-10">
@@ -28,7 +36,7 @@
 				<a href="/">
 					<img
 						src={Logo}
-						alt="Conforma Inox Logo"
+						alt="Conforma Logo"
 						class="text-mask-shine h-10 w-auto transition hover:scale-110"
 					/>
 				</a>
@@ -36,31 +44,30 @@
 
 			<!-- Desktop Navigation -->
 			<div class="hidden flex-1 justify-center gap-2 lg:flex">
-				<a
-					href={localizeHref('/racing')}
-					class="px-4 py-2 text-lg font-bold text-white uppercase transition
-				 hover:scale-110 hover:text-red-600"
+				<button
+					onclick={() => scrollToSection('works')}
+					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300, easing: quintOut }}
 				>
-					{m.racing()}
-				</a>
-				<a
-					href={localizeHref('/industry')}
-					class="px-4 py-2 text-lg font-bold text-white uppercase transition hover:scale-110 hover:text-red-600"
+					Works
+				</button>
+				<button
+					onclick={() => scrollToSection('process')}
+					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300 + 1 * 50, easing: quintOut }}
 				>
-					{m.industry()}
-				</a>
-				<a
-					href={localizeHref('/architecture')}
-					class="px-4 py-2 text-lg font-bold text-white uppercase transition hover:scale-110 hover:text-red-600"
+					Process
+				</button>
+				<button
+					onclick={() => scrollToSection('materials')}
+					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300 + 2 * 50, easing: quintOut }}
 				>
-					{m.architecture()}
-				</a>
+					Materials
+				</button>
 				<a
 					href={localizeHref('/news')}
-					class="px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
+					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300 + 2 * 50, easing: quintOut }}
 				>
 					{m.news()}
@@ -104,27 +111,43 @@
 				in:fly={{ y: -20, duration: 300, easing: quintOut }}
 			>
 				<nav class="flex flex-col gap-4">
-					<a
-						href={localizeHref('/racing')}
+					<button
 						class="block text-lg font-bold text-white uppercase transition hover:text-red-600"
-						onclick={() => (mobileMenuOpen = false)}
+						onclick={() => {
+							mobileMenuOpen = false;
+							scrollToSection('works');
+						}}
 					>
-						{m.racing()}
-					</a>
-					<a
-						href={localizeHref('/industry')}
+						Works
+					</button>
+					<button
 						class="block text-lg font-bold text-white uppercase transition hover:text-red-600"
-						onclick={() => (mobileMenuOpen = false)}
+						onclick={() => {
+							mobileMenuOpen = false;
+							scrollToSection('process');
+						}}
 					>
-						{m.industry()}
-					</a>
-					<a
-						href={localizeHref('/architecture')}
+						Process
+					</button>
+					<button
 						class="block text-lg font-bold text-white uppercase transition hover:text-red-600"
-						onclick={() => (mobileMenuOpen = false)}
+						onclick={() => {
+							mobileMenuOpen = false;
+							scrollToSection('materials');
+						}}
 					>
-						{m.architecture()}
-					</a>
+						Materials
+					</button>
+					<button
+						class="block text-lg text-white uppercase transition hover:text-red-600"
+						onclick={() => {
+							mobileMenuOpen = false;
+							goto(localizeHref('/news'));
+						}}
+					>
+						{m.news()}
+					</button>
+
 					<div class="flex items-center justify-between border-t border-gray-700 pt-4">
 						<LanguageSelector />
 						<button

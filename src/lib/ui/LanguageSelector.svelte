@@ -9,7 +9,7 @@
 		es: 'ES',
 		en: 'EN',
 		pt: 'PT',
-		it: 'IT',
+		it: 'IT'
 	};
 </script>
 
@@ -17,13 +17,13 @@
 	<button tabindex="0" type="button" class="btn btn-ghost btn-md" aria-expanded="false">
 		{labels[getLocale()]}
 	</button>
-	<ul class="dropdown-content rounded items-center z-1 mt-2 bg-gray-900/80 shadow-2xl">
-		{#each locales as langTag}
+	<ul class="dropdown-content z-1 mt-2 items-center rounded bg-gray-900/80 shadow-2xl">
+		{#each locales as langTag (langTag)}
 			{#if langTag !== getLocale()}
 				<li>
 					<button
 						on:click={() => switchToLanguage(langTag)}
-						class="btn btn-ghost w-full text-center justify-center"
+						class="btn w-full justify-center text-center btn-ghost"
 						name="themed-dropdown"
 						disabled={langTag === getLocale()}
 					>

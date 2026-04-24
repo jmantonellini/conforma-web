@@ -1,5 +1,5 @@
 <script lang="ts">
-	import RotatingTitle, { type Title } from './RotatingTitle.svelte';
+	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
 	type Props = {
@@ -9,7 +9,6 @@
 		videoMP4?: string | null;
 		mobileVideoWebM?: string | null;
 		mobileVideoMP4?: string | null;
-		title?: Title;
 	};
 
 	let {
@@ -18,27 +17,43 @@
 		videoWebM = null,
 		videoMP4 = null,
 		mobileVideoWebM = null,
-		mobileVideoMP4 = null,
-		title = { sentence: '', words: [] }
+		mobileVideoMP4 = null
 	}: Props = $props();
+
+	let view = $state(false);
+
+	onMount(() => {
+		view = true;
+	});
 </script>
 
-<!-- svelte-ignore a11y_no_static_element_interactions -->
-<div
-	class="relative flex min-h-screen w-screen! items-center overflow-hidden"
-	aria-label="Hero Section"
->
-	<div class="absolute inset-0 z-1 bg-linear-to-t from-transparent via-black via-40% to-transparent to-90%"></div>
-	<div
-		in:fly={{ y: 100, duration: 800, delay: 200 }}
-		class="z-2 h-auto w-full p-8 text-neutral-content lg:p-20"
-	>
-		<RotatingTitle {title} />
+<div class="relative h-screen w-screen! overflow-hidden" aria-label="Hero Section">
+	<div class="absolute inset-0 z-1 flex h-full w-full flex-col justify-end p-8">
+		{#if view}
+			<h1
+				class="[-webkit-text-stroke: 2px white] text-6xl font-bold text-white lg:text-8xl"
+				in:fly={{ x: 100, duration: 600, delay: 1000 }}
+			>
+				Forged
+			</h1>
+			<h1
+				class="[-webkit-text-stroke: 2px white] text-6xl font-bold text-white lg:text-8xl"
+				in:fly={{ x: 100, duration: 600, delay: 1600 }}
+			>
+				for
+			</h1>
+			<h1
+				class="[-webkit-text-stroke: 2px white] text-6xl font-bold text-white lg:text-8xl"
+				in:fly={{ x: 100, duration: 600, delay: 2200 }}
+			>
+				Excellence
+			</h1>
+		{/if}
 	</div>
 	{#if videoWebM || videoMP4}
 		<!-- Desktop -->
 		<video
-			class="absolute inset-0 hidden h-full w-full object-cover md:block"
+			class="hidden h-full w-full object-cover md:block"
 			{poster}
 			autoplay
 			aria-hidden="true"
@@ -53,7 +68,7 @@
 
 		<!-- Mobile -->
 		<video
-			class="absolute inset-0 block h-full w-full object-cover md:hidden"
+			class="block h-full w-full object-cover md:hidden"
 			poster={mobilePoster ?? poster}
 			autoplay
 			muted

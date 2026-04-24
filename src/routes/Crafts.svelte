@@ -1,7 +1,7 @@
 <script>
-	import CraftGallery from './CraftGallery.svelte';
+	import CraftGallery from './racing/sections/CraftGallery.svelte';
 
-	import crafts from '../crafts.json';
+	import crafts from './crafts.json';
 </script>
 
 <div class="flex w-screen flex-col items-center gap-6 p-6 py-8 lg:gap-14 lg:py-24">
