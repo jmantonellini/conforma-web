@@ -12,15 +12,15 @@
 	<div class="flex p-6">
 	<div class="flex flex-col items-center px-6">
 			<h3 class="font-bebas text-5xl lg:text-5xl font-bold">20</h3>
-			<div class="text-lg text-gray-300">Countries reached</div>
+			<div class="text-lg text-gray-300">{m.smug_small_falcon_absorb()}</div>
 		</div>
 		<div class="flex flex-col items-center px-6">
 			<h3 class="font-bebas text-5xl lg:text-5xl font-bold">25+</h3>
-			<div class="text-lg text-gray-300">Years crafting</div>
+			<div class="text-lg text-gray-300">{m.ornate_day_hare_dazzle()}</div>
 		</div>
 		<div class="flex flex-col items-center px-6">
 			<h3 class="font-bebas text-5xl lg:text-5xl font-bold">340°</h3>
-			<div class="text-lg text-gray-300">Bend precision</div>
+			<div class="text-lg text-gray-300">{m.keen_spicy_newt_relish()}</div>
 		</div>
 		
 	</div>

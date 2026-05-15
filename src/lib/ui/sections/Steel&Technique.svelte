@@ -1,64 +1,66 @@
+<script lang="ts">
+	import { m } from '$lib/paraglide/messages';
+</script>
+
 <!-- MATERIALS -->
 <section
-	class="relative bg-gray-200 px-8 lg:px-16 py-16 lg:py-28"
+	class="relative bg-gray-200 px-8 py-16 lg:px-16 lg:py-28"
 	id="materials"
 	style="clip-path: polygon(0 0, 100% 2rem, 100% 100%, 0 100%);"
 >
 	<div
 		class="mb-4 flex items-center gap-4 text-[0.72rem] tracking-[0.35em] text-red-800 uppercase before:h-px before:w-7.5 before:bg-red-800 before:content-['']"
 	>
-		Technical Specs
+		{m.lofty_shy_mare_radiate()}
 	</div>
 	<h2
 		class="mb-6 font-['Bebas_Neue',sans-serif] text-[clamp(3rem,6vw,5.5rem)] leading-[0.95] tracking-[0.02em] text-gray-800"
 	>
-		STEEL &amp;<br />TECHNIQUE
+		{m.plain_tangy_bird_adore()} &amp;<br />{m.free_slimy_robin_exhale()}
 	</h2>
 
-	<div class="mt-8 lg:mt-16 grid grid-rows-2 lg:grid-rows-1 lg:grid-cols-2 items-center lg:items-start gap-12 lg:gap-24">
+	<div
+		class="mt-8 grid grid-rows-2 items-center gap-12 lg:mt-16 lg:grid-cols-2 lg:grid-rows-1 lg:items-start lg:gap-24"
+	>
 		<div class="w-full">
-			<p class="mb-12 lg:max-w-140 text-[1rem] leading-relaxed text-gray-800">
-				We work primarily with austenitic stainless steels selected for corrosion resistance, heat
-				tolerance, and weldability. All stock is traceable and certified to EN 10088 or ASTM A240.
+			<p class="mb-12 text-[1rem] leading-relaxed text-gray-800 lg:max-w-140">
+				{m.misty_real_maggot_charm()}
 			</p>
 
 			<div class="mb-12">
 				<div class="mb-4 flex items-baseline gap-4 border-b border-gray-400 pb-4">
 					<div class="font-['Bebas_Neue',sans-serif] text-4xl text-red-800">AISI 304</div>
-					<div
-						class="text-xs tracking-[0.15em] text-gray-700 uppercase"
-					>
-						18/8 · General Purpose
+					<div class="text-xs tracking-[0.15em] text-gray-700 uppercase">
+						18/8 · {m.east_stout_mayfly_revive()}
 					</div>
 				</div>
 				<p class="mb-4 text-[0.88rem] text-gray-700">
-					The workhorse of our operation. Used in automotive exhausts, architectural elements, and
-					general fabrication. Excellent formability and weldability.
+					{m.neat_zesty_deer_dance()}
 				</p>
 				<div class="grid grid-cols-2 gap-2 gap-x-8">
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
 							>Cr: 18–20%
 							<br /></span
-						>Chromium content
+						>{m.extra_gray_carp_coax()}
 					</div>
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
 							>Ni: 8–10.5%
 							<br /></span
-						>Nickel content
+						>{m.sea_mealy_owl_splash()}
 					</div>
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
 							>Max 900°C
 							<br /></span
-						>Continuous service temp
+						>{m.every_alive_dog_fetch()}
 					</div>
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
 							>Ra 0.4–1.6 µm
 							<br /></span
-						>Surface finish range
+						>{m.grand_hour_rook_race()}
 					</div>
 				</div>
 			</div>
@@ -66,79 +68,66 @@
 			<div class="mb-12">
 				<div class="mb-4 flex items-baseline gap-4 border-b border-gray-400 pb-4">
 					<div class="font-['Bebas_Neue',sans-serif] text-4xl text-red-800">AISI 316L</div>
-					<div
-						class="text-xs tracking-[0.15em] text-gray-700 uppercase"
-					>
-						18/10/2 Mo · Marine &amp; Sanitary
+					<div class="text-xs tracking-[0.15em] text-gray-700 uppercase">
+						18/10/2 Mo · {m.sunny_minor_bee_hint()}
 					</div>
 				</div>
 				<p class="mb-4 text-[0.88rem] text-gray-700">
-					Our choice for laboratory, chemical, and coastal architectural applications. The
-					molybdenum addition dramatically improves resistance to pitting and crevice corrosion.
+					{m.born_such_finch_link()}
 				</p>
 				<div class="grid grid-cols-2 gap-2 gap-x-8">
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
 							>Mo: 2–3%
 							<br /></span
-						>Molybdenum addition
+						>{m.factual_knotty_carp_cut()}
 					</div>
 					<div class="text-[0.85rem] text-gray-800">
-						<span class="text-[0.78rem] text-gray-700">C: ≤0.03% <br /></span>Low carbon · no
-						sensitization
+						<span class="text-[0.78rem] text-gray-700">C: ≤0.03% <br /></span
+						>{m.flaky_top_sawfish_dine()}
 					</div>
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
-							>Electropolishable
+							>{m.noble_wise_mantis_adore()}
 							<br /></span
-						>Down to Ra 0.1 µm
+						>{m.shy_quiet_ocelot_yell()}
 					</div>
 					<div class="text-[0.85rem] text-gray-800">
 						<span class="text-[0.78rem] text-gray-700"
 							>FDA / EHEDG
 							<br /></span
-						>Sanitary compliance
+						>{m.patient_dirty_albatross_stop()}
 					</div>
 				</div>
 			</div>
 
 			<div class="mb-12">
 				<div class="mb-4 flex items-baseline gap-4 border-b border-gray-400 pb-4">
-					<div class="font-['Bebas_Neue',sans-serif] text-4xl text-red-800">321 / 347</div>
-					<div
-						class="text-xs tracking-[0.15em] text-gray-700 uppercase"
-					>
-						Ti / Nb Stabilized · High Heat
+					<div class="font-['Bebas_Neue',sans-serif] text-4xl text-red-800">321</div>
+					<div class="text-xs tracking-[0.15em] text-gray-700 uppercase">
+						{m.this_game_panther_gasp()}
 					</div>
 				</div>
 				<p class="text-[0.88rem] text-gray-700">
-					Used in extreme-heat racing manifolds and turbo collectors where sustained temperatures
-					exceed 850 °C. Titanium and niobium stabilization prevents carbide precipitation in the
-					heat-affected zone.
+					{m.sour_tough_ladybug_roar()}
 				</p>
 			</div>
 		</div>
 
 		<div class="w-full">
-			<p
-				class="mb-6 text-xs tracking-[0.2em] text-red-800 uppercase"
-			>
-				Welding Processes
+			<p class="mb-6 text-xs tracking-[0.2em] text-red-800 uppercase">
+				{m.frail_large_hyena_kick()}
 			</p>
 
 			<div
 				class="mb-4 flex items-start gap-6 border border-gray-400 bg-gray-600 p-7 transition-colors duration-200 hover:border-white"
 			>
 				<div>
-					<div
-						class="mb-1 text-[1rem] font-semibold tracking-widest text-white uppercase"
-					>
+					<div class="mb-1 text-[1rem] font-semibold tracking-widest text-white uppercase">
 						GTAW / TIG
 					</div>
 					<p class="text-[0.85rem] leading-relaxed text-gray-300">
-						Our primary process. Gas Tungsten Arc Welding with 100% argon shielding and backing gas.
-						Delivers the highest visual quality and mechanical integrity. Used on all visible and
-						critical welds. Orbital TIG available for tube and pipe joints up to DN100.
+						{m.next_big_goldfish_reap()}
 					</p>
 				</div>
 			</div>
@@ -147,32 +136,11 @@
 				class="mb-4 flex items-start gap-6 border border-gray-400 bg-gray-600 p-7 transition-colors duration-200 hover:border-white"
 			>
 				<div>
-					<div
-						class="mb-1 text-[1rem] font-semibold tracking-widest text-white uppercase"
-					>
-						Plasma Welding
-					</div>
-					<p class="text-[0.85rem] leading-relaxed text-gray-300">
-						Applied on thin-wall tube (0.8–1.5 mm) where heat input control is critical to avoid
-						distortion. Produces a consistent, narrow bead and deep penetration without filler,
-						ideal for sanitary joints.
-					</p>
-				</div>
-			</div>
-
-			<div
-				class="mb-4 flex items-start gap-6 border border-gray-400 bg-gray-600 p-7 transition-colors duration-200 hover:border-white"
-			>
-				<div>
-					<div
-						class="mb-1 text-[1rem] font-semibold tracking-widest text-white uppercase"
-					>
+					<div class="mb-1 text-[1rem] font-semibold tracking-widest text-white uppercase">
 						MIG / GMAW
 					</div>
 					<p class="text-[0.85rem] leading-relaxed text-gray-300">
-						Used on structural architectural elements and heavy-wall industrial piping (≥3 mm) where
-						speed and deposition rate matter. Applied with appropriate filler selection (308L, 316L)
-						and tri-mix shielding gas.
+						{m.spare_knotty_fireant_achieve()}
 					</p>
 				</div>
 			</div>
@@ -181,71 +149,62 @@
 				<thead>
 					<tr>
 						<th
-							class="border-b border-gray-400 lg:px-4 py-3 text-left text-[0.7rem] tracking-[0.2em] text-red-800 uppercase"
+							class="border-b border-gray-400 py-3 text-left text-[0.7rem] tracking-[0.2em] text-red-800 uppercase lg:px-4"
 						>
-							Machine</th
-						>
-						<th
-							class="border-b border-gray-400 lg:px-4 py-3 text-left text-[0.7rem] tracking-[0.2em] text-red-800 uppercase"
-						>
-							Capability</th
+							{m.trick_safe_ladybug_win()}</th
 						>
 						<th
-							class="border-b border-gray-400 lg:px-4 py-3 text-left text-[0.7rem] tracking-[0.2em] text-red-800 uppercase"
+							class="border-b border-gray-400 py-3 text-left text-[0.7rem] tracking-[0.2em] text-red-800 uppercase lg:px-4"
 						>
-							Tolerance</th
+							{m.plain_lime_maggot_urge()}</th
+						>
+						<th
+							class="border-b border-gray-400 py-3 text-left text-[0.7rem] tracking-[0.2em] text-red-800 uppercase lg:px-4"
+						>
+							{m.lazy_new_seal_hike()}</th
 						>
 					</tr>
 				</thead>
 				<tbody>
 					<tr class="hover:bg-white/5">
-						<td class="border-b border-gray-600 pr-2 lg:px-4 py-3 text-sm text-gray-600"
-							>CNC Mandrel Bender
+						<td class="border-b border-gray-600 py-3 pr-2 text-sm text-gray-600 lg:px-4"
+							>{m.salty_ornate_stingray_link()}
 						</td>
-						<td class="border-b border-gray-600 px-2 lg:px-4 py-3 text-sm text-gray-600"
-							>8–76 mm OD tube
+						<td class="border-b border-gray-600 px-2 py-3 text-sm text-gray-600 lg:px-4"
+							>25,4–63,5 mm {m.odd_dirty_millipede_dare()}
 						</td>
-						<td class="border-b border-gray-600 pl-2 lg:px-4 py-3 text-sm text-gray-600"
-							>±0.5°</td
+						<td class="border-b border-gray-600 py-3 pl-2 text-sm text-gray-600 lg:px-4">±1°</td>
+					</tr>
+					<tr class="hover:bg-white/5">
+						<td class="border-b border-gray-600 py-3 pr-2 text-sm text-gray-600 lg:px-4"
+							>{m.sea_kind_fish_kick()}
+						</td>
+						<td class="border-b border-gray-600 px-2 py-3 text-sm text-gray-600 lg:px-4"
+							>{m.maroon_fun_gopher_belong()}</td
+						>
+						<td class="border-b border-gray-600 py-3 pl-2 text-sm text-gray-600 lg:px-4">±0.5 mm</td
 						>
 					</tr>
 					<tr class="hover:bg-white/5">
-						<td class="border-b border-gray-600 pr-2 lg:px-4 py-3 text-sm text-gray-600"
-							>CNC Press Brake
+						<td class="border-b border-gray-600 py-3 pr-2 text-sm text-gray-600 lg:px-4"
+							>{m.spare_bright_crocodile_pull()}</td
+						>
+						<td class="border-b border-gray-600 px-2 py-3 text-sm text-gray-600 lg:px-4"
+							>{m.mild_left_macaw_borrow()}
 						</td>
-						<td class="border-b border-gray-600 px-2 lg:px-4 py-3 text-sm text-gray-600"
-							>Up to 3000 mm / 3 mm SS</td
-						>
-						<td class="border-b border-gray-600 pl-2 lg:px-4 py-3 text-sm text-gray-600"
-							>±0.1 mm</td
+						<td class="border-b border-gray-600 py-3 pl-2 text-sm text-gray-600 lg:px-4"
+							>{m.busy_polite_eagle_radiate()}</td
 						>
 					</tr>
 					<tr class="hover:bg-white/5">
-						<td class="border-b border-gray-600 pr-2 lg:px-4 py-3 text-sm text-gray-600"
-							>Orbital Welder</td
+						<td class="border-b border-gray-600 py-3 pr-2 text-sm text-gray-600 lg:px-4"
+							>{m.hour_dizzy_crocodile_quell()}</td
 						>
-						<td class="border-b border-gray-600 px-2 lg:px-4 py-3 text-sm text-gray-600"
-							>DN 6 – DN 100 pipe
-						</td>
-						<td class="border-b border-gray-600 pl-2 lg:px-4 py-3 text-sm text-gray-600"
-							>Full pen. guaranteed</td
+						<td class="border-b border-gray-600 px-2 py-3 text-sm text-gray-600 lg:px-4"
+							>{m.teal_inclusive_samuel_buzz()}</td
 						>
-					</tr>
-					<tr class="hover:bg-white/5">
-						<td class="border-b border-gray-600 pr-2 lg:px-4 py-3 text-sm text-gray-600"
-							>Electropolishing Tank</td
+						<td class="border-b border-gray-600 py-3 pl-2 text-sm text-gray-600 lg:px-4">±0.3 mm</td
 						>
-						<td class="border-b border-gray-600 px-2 lg:px-4 py-3 text-sm text-gray-600"
-							>Max 2000 × 600 × 500 mm</td
-						>
-						<td class="border-b border-gray-600 pl-2 lg:px-4 py-3 text-sm text-gray-600"
-							>Ra ≤ 0.4 µm</td
-						>
-					</tr>
-					<tr class="hover:bg-white/5">
-						<td class="border-b border-gray-600 pr-2 lg:px-4 py-3 text-sm text-gray-600">Plasma Cutter</td>
-						<td class="border-b border-gray-600 px-2 lg:px-4 py-3 text-sm text-gray-600">Up to 25 mm SS plate</td>
-						<td class="border-b border-gray-600 pl-2 lg:px-4 py-3 text-sm text-gray-600">±0.3 mm</td>
 					</tr>
 				</tbody>
 			</table>

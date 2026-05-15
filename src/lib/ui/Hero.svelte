@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { m } from '$lib/paraglide/messages';
 	import { onMount } from 'svelte';
 	import { fly } from 'svelte/transition';
 
@@ -71,19 +72,19 @@
 				class="text-6xl font-bold text-white lg:text-8xl"
 				in:fly={{ x: 100, duration: 600, delay: 1000 }}
 			>
-				Forged
+				{m.cozy_alive_reindeer_fade()}
 			</h1>
 			<h1
 				class="text-6xl font-bold text-white lg:text-8xl"
 				in:fly={{ x: 100, duration: 600, delay: 1600 }}
 			>
-				for
+				{m.green_quick_swallow_hurl()}
 			</h1>
 			<h1
 				class="text-6xl font-bold text-white lg:text-8xl"
 				in:fly={{ x: 100, duration: 600, delay: 2200 }}
 			>
-				Excellence
+				{m.broad_clean_turtle_amuse()}
 			</h1>
 		{/if}
 	</div>

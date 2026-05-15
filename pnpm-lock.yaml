@@ -17,6 +17,9 @@ importers:
       '@types/three':
         specifier: ^0.182.0
         version: 0.182.0
+      dompurify:
+        specifier: ^3.4.1
+        version: 3.4.1
       gray-matter:
         specifier: ^4.0.3
         version: 4.0.3
@@ -663,6 +666,9 @@ packages:
   '@types/three@0.182.0':
     resolution: {integrity: sha512-WByN9V3Sbwbe2OkWuSGyoqQO8Du6yhYaXtXLoA5FkKTUJorZ+yOHBZ35zUUPQXlAKABZmbYp5oAqpA4RBjtJ/Q==}
 
+  '@types/trusted-types@2.0.7':
+    resolution: {integrity: sha512-ScaPdn1dQczgbl0QFTeTOmVHFULt394XJgOQNoyVhZ6r2vLnMLJfBPd53SB52T/3G36VI1/g2MZaX0cwDuXsfw==}
+
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
@@ -873,6 +879,9 @@ packages:
 
   diet-sprite@0.0.1:
     resolution: {integrity: sha512-zSHI2WDAn1wJqJYxcmjWfJv3Iw8oL9reQIbEyx2x2/EZ4/qmUTIo8/5qOCurnAcq61EwtJJaZ0XTy2NRYqpB5A==}
+
+  dompurify@3.4.1:
+    resolution: {integrity: sha512-JahakDAIg1gyOm7dlgWSDjV4n7Ip2PKR55NIT6jrMfIgLFgWo81vdr1/QGqWtFNRqXP9UV71oVePtjqS2ebnPw==}
 
   earcut@2.2.4:
     resolution: {integrity: sha512-/pjZsA1b4RPHbeWZQn66SWS8nZZWLQQ23oE3Eam7aroEFGEvwKAsJfZ9ytiEMycfzXWpca4FA9QIOehf7PocBQ==}
@@ -2181,6 +2190,9 @@ snapshots:
       fflate: 0.8.2
       meshoptimizer: 0.22.0
 
+  '@types/trusted-types@2.0.7':
+    optional: true
+
   '@types/unist@2.0.11': {}
 
   '@types/webxr@0.5.24': {}
@@ -2386,6 +2398,10 @@ snapshots:
   devalue@5.6.1: {}
 
   diet-sprite@0.0.1: {}
+
+  dompurify@3.4.1:
+    optionalDependencies:
+      '@types/trusted-types': 2.0.7
 
   earcut@2.2.4: {}
 

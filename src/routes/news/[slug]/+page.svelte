@@ -1,4 +1,5 @@
 <script lang="ts">
+	import DOMPurify from 'dompurify';
 	const { data } = $props();
 </script>
 
@@ -6,9 +7,10 @@
 	<title>{data.meta.title} - News</title>
 </svelte:head>
 
-<div class="min-h-screen bg-linear-to-b from-slate-900 to-slate-800 mt-10 lg:mt-20">
+<div class="mt-10 min-h-screen bg-linear-to-b from-slate-900 to-slate-800 lg:mt-20">
 	<div class="mx-auto max-w-3xl px-4 py-12 sm:px-6 lg:px-8">
 		<a
+			aria-label="Back to news listing"
 			href="/news"
 			class="mb-8 inline-flex items-center text-blue-400 transition-colors hover:text-blue-300"
 		>
@@ -51,7 +53,8 @@
 		<article
 			class="prose max-w-none prose-invert [&_a]:text-blue-400 [&_a]:hover:text-blue-300 [&_blockquote]:border-l-4 [&_blockquote]:border-blue-500 [&_blockquote]:pl-4 [&_blockquote]:text-slate-300 [&_blockquote]:italic [&_code]:rounded [&_code]:bg-slate-700 [&_code]:px-2 [&_code]:py-1 [&_code]:text-blue-300 [&_h2]:mt-8 [&_h2]:mb-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-white [&_h3]:text-xl [&_h3]:font-semibold [&_h3]:text-slate-100 [&_li]:mb-2 [&_p]:mb-4 [&_p]:leading-relaxed [&_p]:text-slate-300 [&_strong]:text-white [&_ul]:ml-6 [&_ul]:list-disc [&_ul]:text-slate-300"
 		>
-			{@html data.content}
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+			{@html DOMPurify.sanitize(data.content)}
 		</article>
 	</div>
 </div>

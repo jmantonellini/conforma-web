@@ -9,17 +9,18 @@
 	<title>News - Conforma</title>
 </svelte:head>
 
-<div class="min-h-screen bg-linear-to-b from-slate-900 to-slate-800 mt-10 lg:mt-20">
+<div class="mt-10 min-h-screen bg-linear-to-b from-slate-900 to-slate-800 lg:mt-20">
 	<div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
 		<div class="mb-12">
-			<h1 class="mb-4 text-3xl lg:text-5xl font-bold text-white sm:text-6xl">News & Updates</h1>
-			<p class="text-lg lg:text-xl text-slate-300">Stay informed with our latest blog posts</p>
+			<h1 class="mb-4 text-3xl font-bold text-white sm:text-6xl lg:text-5xl">News & Updates</h1>
+			<p class="text-lg text-slate-300 lg:text-xl">Stay informed with our latest blog posts</p>
 			<div class="mt-6 h-1 w-24 rounded-full bg-blue-500"></div>
 		</div>
 
 		<div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
 			{#each data.posts as post (post.slug)}
 				<a
+					aria-label={`Read more about ${post.title}`}
 					href={localizeHref(`/news/${post.slug}`)}
 					class="group overflow-hidden rounded-lg border border-slate-600 bg-slate-700/50 backdrop-blur transition-all duration-300 hover:border-blue-500 hover:bg-slate-600 hover:shadow-xl hover:shadow-blue-500/20"
 				>

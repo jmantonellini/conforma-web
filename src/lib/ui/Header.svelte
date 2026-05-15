@@ -12,9 +12,13 @@
 	let mobileMenuOpen = $state(false);
 
 	function scrollToSection(id: string) {
-		const element = document.getElementById(id);
-		if (element) {
-			element.scrollIntoView({ behavior: 'smooth' });
+		if (window.location.pathname !== '/') {
+			goto('/').then(() => scrollToSection(id));
+		} else {
+			const element = document.getElementById(id);
+			if (element) {
+				element.scrollIntoView({ behavior: 'smooth' });
+			}
 		}
 	}
 
@@ -33,7 +37,7 @@
 		<div class="flex items-center justify-between px-6 py-4 lg:px-10">
 			<!-- Logo -->
 			<div class="flex-1 overflow-visible">
-				<a href="/">
+				<a href="/" aria-label="Conforma Home">
 					<img
 						src={Logo}
 						alt="Conforma Logo"
@@ -49,21 +53,21 @@
 					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300, easing: quintOut }}
 				>
-					Works
+					{m.sunny_slimy_owl_intend()}
 				</button>
 				<button
 					onclick={() => scrollToSection('process')}
 					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300 + 1 * 50, easing: quintOut }}
 				>
-					Process
+					{m.curly_early_bat_dazzle()}
 				</button>
 				<button
 					onclick={() => scrollToSection('materials')}
 					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
 					in:fly={{ x: 50, duration: 1000, delay: 300 + 2 * 50, easing: quintOut }}
 				>
-					Materials
+					{m.flaky_arable_squid_laugh()}
 				</button>
 				<a
 					href={localizeHref('/news')}
@@ -125,7 +129,7 @@
 							scrollToSection('works');
 						}}
 					>
-						Works
+						{m.sunny_slimy_owl_intend()}
 					</button>
 					<button
 						class="block text-lg font-bold text-white uppercase transition hover:text-red-600"
@@ -134,7 +138,7 @@
 							scrollToSection('process');
 						}}
 					>
-						Process
+						{m.curly_early_bat_dazzle()}
 					</button>
 					<button
 						class="block text-lg font-bold text-white uppercase transition hover:text-red-600"
@@ -143,7 +147,7 @@
 							scrollToSection('materials');
 						}}
 					>
-						Materials
+						{m.flaky_arable_squid_laugh()}
 					</button>
 					<button
 						class="block text-lg text-white uppercase transition hover:text-red-600"
@@ -167,7 +171,7 @@
 							}}
 							class="w-full border-2 border-white px-4 py-2 text-sm font-medium text-white uppercase transition hover:border-red-600 hover:text-red-600"
 						>
-							Get Pricing
+							{m.mealy_stale_hare_twist()}
 						</button>
 					</div>
 				</nav>

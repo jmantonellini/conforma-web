@@ -8,6 +8,7 @@
 	import Header from '$lib/ui/Header.svelte';
 	import Lenis from 'lenis';
 	import WhatsappFAB from '$lib/ui/WhatsappFAB.svelte';
+	import { m } from '$lib/paraglide/messages';
 
 	let lenis: Lenis;
 
@@ -54,7 +55,18 @@
 	});
 </script>
 
-<svelte:head><link rel="icon" href={favicon} /></svelte:head>
+<svelte:head>
+	<link rel="icon" href={favicon} />
+	<title>{m.knotty_plane_cockroach_favor()}</title>
+	<meta
+		name="description"
+		content="Conforma specializes in high-quality stainless steel fabrication for industrial tanks, piping systems, and architectural railings in Argentina."
+	/>
+	<meta
+		name="keywords"
+		content="stainless steel, industrial tanks, piping systems, Argentina, metal fabrication"
+	/>
+</svelte:head>
 
 <Preloader show={!loaded} />
 <WhatsappFAB />

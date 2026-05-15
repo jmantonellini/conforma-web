@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import ResponsiveImage from '../ResponsiveImage.svelte';
+	import { m } from '$lib/paraglide/messages';
 
 	let galleryItems = $state([
 		{
@@ -104,12 +105,12 @@
 	style="clip-path: polygon(0 0, 100% 2rem, 100% 100%, 0 100%);"
 >
 	<div
-		class="mb-4 flex items-center gap-4 text-[0.72rem] tracking-[0.35em] text-red-800 uppercase before:h-px before:w-7.5 before:bg-red-800 before:content-['']"
+		class="mb-4 flex items-center gap-4 text-[0.72rem] tracking-[0.35em] text-red-400 uppercase before:h-px before:w-7.5 before:bg-red-800 before:content-['']"
 	>
-		Portfolio
+		{m.witty_awful_hawk_trust()}
 	</div>
 	<h2 class="mb-6 text-[clamp(3rem,6vw,5.5rem)] leading-[0.95] tracking-[0.02em] text-white">
-		OUR WORK
+		{m.agent_nice_tiger_lock()}
 	</h2>
 
 	<div class="mt-16 mb-0 flex justify-between gap-0 border-b border-gray-400 lg:justify-normal">
@@ -118,7 +119,7 @@
 				onclick={() => switchTab(tab)}
 				class="cursor-pointer border-b-2 border-transparent bg-transparent py-4 text-[0.8rem] text-gray-400 uppercase transition-all duration-200 lg:px-8 {activeTab ===
 				tab
-					? 'border-b-2 border-red-800 text-red-800'
+					? 'border-b-2 border-red-800 text-red-400'
 					: 'hover:text-white'}">{tab}</button
 			>
 		{/each}
@@ -140,7 +141,7 @@
 					class="absolute inset-0 flex flex-col justify-end bg-linear-to-t from-black/85 via-transparent to-transparent p-6 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
 					class:!opacity-100={isMobile && visibleId === item.id}
 				>
-					<div class="mb-1 text-[0.65rem] tracking-[0.25em] text-red-800 uppercase">
+					<div class="mb-1 text-[0.65rem] tracking-[0.25em] text-red-400 uppercase">
 						{item.tag}
 					</div>
 					<div class=" text-[1.4rem] text-white">
