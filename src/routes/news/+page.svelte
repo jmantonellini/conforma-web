@@ -1,19 +1,20 @@
 <script lang="ts">
 	import { localizeHref } from '$lib/paraglide/runtime';
 	import type { Post } from '$lib/posts';
+	import { m } from '$lib/paraglide/messages';
 
 	const { data }: { data: { posts: Post[] } } = $props();
 </script>
 
 <svelte:head>
-	<title>News - Conforma</title>
+	<title>{m.sweet_tense_iguana_flip()} - Conforma</title>
 </svelte:head>
 
 <div class="mt-10 min-h-screen bg-linear-to-b from-slate-900 to-slate-800 lg:mt-20">
 	<div class="mx-auto max-w-6xl px-4 py-12 sm:px-6 lg:px-8">
 		<div class="mb-12">
-			<h1 class="mb-4 text-3xl font-bold text-white sm:text-6xl lg:text-5xl">News & Updates</h1>
-			<p class="text-lg text-slate-300 lg:text-xl">Stay informed with our latest blog posts</p>
+			<h1 class="mb-4 text-3xl font-bold text-white sm:text-6xl lg:text-5xl">{m.fit_early_mammoth_pout()}</h1>
+			<p class="text-lg text-slate-300 lg:text-xl">{m.knotty_north_leopard_enrich()}</p>
 			<div class="mt-6 h-1 w-24 rounded-full bg-blue-500"></div>
 		</div>
 
@@ -50,7 +51,7 @@
 						</h2>
 
 						<p class="line-clamp-2 text-slate-300">
-							{post.excerpt || 'Read more about this post...'}
+							{post.excerpt || m.keen_ago_mallard_dream()}
 						</p>
 					</div></a
 				>
@@ -59,7 +60,7 @@
 
 		{#if data.posts.length === 0}
 			<div class="py-12 text-center">
-				<p class="text-xl text-slate-400">No posts yet. Check back soon!</p>
+				<p class="text-xl text-slate-400">{m.patchy_day_goose_nurture()}</p>
 			</div>
 		{/if}
 	</div>

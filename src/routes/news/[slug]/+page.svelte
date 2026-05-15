@@ -1,5 +1,6 @@
 <script lang="ts">
-	import DOMPurify from 'dompurify';
+	import DOMPurify from 'isomorphic-dompurify';
+
 	const { data } = $props();
 </script>
 
