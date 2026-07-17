@@ -25,7 +25,7 @@
 
 <div class="relative flex w-screen flex-col">
 	<Hero
-		poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/tc-proceso-poster.webp"
+		poster="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/images/heros/poster-web.webp"
 		videoMP4="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/cfxweb.mp4"
 		onVideoLoaded={handleVideoLoaded}
 		mobileVideoMP4="https://pub-0e65f71de72c4675b566dee8de019eb5.r2.dev/videos/TC-proceso.mp4"
