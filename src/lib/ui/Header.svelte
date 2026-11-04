@@ -76,6 +76,13 @@
 				>
 					{m.news()}
 				</a>
+				<a
+					href={localizeHref('/catalogo')}
+					class="cursor-pointer px-4 py-2 text-lg text-white uppercase transition hover:scale-110 hover:text-red-600"
+					in:fly={{ x: 50, duration: 1000, delay: 300 + 2 * 50, easing: quintOut }}
+				>
+					{m.catalogo()}
+				</a>
 			</div>
 
 			<!-- Right side buttons -->
