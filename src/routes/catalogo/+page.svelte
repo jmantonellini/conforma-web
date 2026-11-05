@@ -13,10 +13,4 @@
 		height: 100dvh;
 		border: 0;
 	}
-
-	@media (max-width: 480px) {
-		.catalog-embed {
-			height: max(100dvh, 625vw);
-		}
-	}
 </style>
